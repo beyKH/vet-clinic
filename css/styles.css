@@ -59,23 +59,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
-/* 1310px
-tel link hover boladi
-nav centerda turadi
-baliqlar before
 
-hero
-2ta alohida rasm
-
-
-ourservices
-list alohida
-pasgi alohida
-
-
-
-
-*/
 
 /* REUSABLE */
 
@@ -120,11 +104,6 @@ pasgi alohida
 .btn--gold{
   background-color: var(--color-primary-gold);
 }
-
-
-
-
-
 
 
 body {
