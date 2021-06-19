@@ -214,7 +214,9 @@
     </section>
 
     <section class="contact">
-      <div class="contact__map"><a href="https://yandex.com/maps/org/najot_ta_lim/206616411269/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Najot Ta'lim</a><a href="https://yandex.com/maps/10335/tashkent/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Educational center in Tashkent</a><iframe src="https://yandex.com/map-widget/v1/-/CCUeMGbC3A" width="462" height="652"></iframe></div>
+      <div class="contact__map">
+        <a href="https://yandex.com/maps/org/najot_ta_lim/206616411269/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.com/maps/10335/tashkent/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a><iframe src="https://yandex.com/map-widget/v1/-/CCUeMGbC3A" width="462" height="652"></iframe>
+      </div>
       <div class="contact__box">
         <h2 class="contact__heading">Обратная связь</h2>
         <p class="contact__info">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму
@@ -227,7 +229,7 @@
           </div>
           <div class="contact-form__group">
             <input class="contact-form__input" type="email" name="email" aria-label="user email"
-            placeholder="Email для обратной связи" required>
+            placeholder="Email для обратной связи" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required>
           </div>
           <div class=" contact-form__tx">
             <textarea class="contact-form__input contact-form__textarea" name="text-field" spellcheck="false" rows="10"
@@ -236,12 +238,67 @@
           </div>
           <a class="btn btn--gold contact__link" href="#">Задать нам вопрос</a>
         </form>
-
       </div>
     </section>
 
   </main>
 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__logo-box">
+        <a class="footer__logo" href="index.html">
+          <img src="img/logo.svg" alt="logo of vet-clinic" width="158" height="77">
+        </a>
+      </div>
+      <div class="footer__box">
+        <ul class="footer__list footer__list-start">
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Главная</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">О Клинике</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Наши Услуги</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Полезные Статьи</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">FAQ</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__date-box">
+        <span class="footer__date icon-before icon-date"><span>Пн - Пт </span> 8:00 - 18:00</span>
+        <span class="footer__date"><span>Сб - Вс </span> 8:00 - 14:00</span>
+      </div>
+
+      <address class="footer__adress">г. Мариуполь, <br>  проспект Победы, 48а</address>
+
+      <div class="footer__phone-box">
+        <ul class="footer__phone-list">
+         <li class="site-header__phone phone">
+           <a class="phone__link icon-phone phone__before" href="tel:0676347574">(067) 634 -75 - 74</a>
+         </li>
+         <li class="site-header__phone phone">
+           <a class="phone__link phone " href="tel:0637570131">(0637) 57 - 01 - 31</a>
+         </li>
+         <li class="site-header__phone phone">
+           <a class="phone__link " href="tel:0982664389">(098) 266 - 43 - 89</a>
+         </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <!-- VALIDATOR ||AUTOPREFIX || MINIFY  -->
   <script src="js/main.js"></script>

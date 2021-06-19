@@ -316,6 +316,13 @@ img {
   top:0;
   left: 0;
   transform: translateY(-50%);
+  transition: opacity 0.3s ease;
+}
+.logo:hover{
+  opacity: 0.8;
+}
+.logo:active{
+  opacity: 0.6;
 }
 
 .logo__img {
@@ -940,7 +947,7 @@ img {
 
 .contact__map{
   width: 462px;
-  height: 650px;
+  height: 647px;
 }
 
 .contact__map iframe{
@@ -1015,4 +1022,133 @@ img {
   padding: 15px 50px;
   border-radius: 0;
 
+}
+
+
+/* FOOTER */
+
+.footer{
+  padding-top: 54px;
+  background-color: #f3f3f3;
+}
+
+
+.footer__container{
+  display: flex;
+}
+
+.footer__logo-box {
+  width: 158px;
+  margin-right: 67px;
+  display: flex;
+}
+
+.footer__logo {}
+
+
+.footer__box {
+  display: block;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style: none;
+}
+
+.footer__list-start{
+  margin-right: 87px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.footer__link {
+
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--color-primary-black);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
+.footer__date-box{
+  margin-left: 127px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer__date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  color: var(--color-primary-black);
+  display: flex;
+  align-items: center;
+
+}
+
+.footer__date span{
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+
+
+.icon-date::before {
+  background-image: url("../img/icon-date.svg");
+}
+
+
+
+.footer__adress{
+  margin-right: 87px;
+  margin-left: 112px;
+  display: flex;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-primary-black);
+}
+
+.footer__adress::before{
+  content: '';
+  flex-shrink: 0;
+  display: block;
+  margin-right: 9px;
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/icon-home.svg");
+}
+
+
+.footer__phone-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.footer__phone-box{
+  display: flex;
+}
+.footer__phone-box::before {
+  content: '';
+  margin-right: 9px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-phone.svg");
 }
