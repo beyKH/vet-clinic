@@ -5,6 +5,7 @@
   --color-primary-gold: #FFBD54;
   --color-primary-black: #333;
   --section-color : #F3F3F3;
+  --main-white-color: #fff;
   --main-font:"FuturaPT", "Arial", sans-serif;
 
 }
@@ -235,11 +236,25 @@ img {
   background-image: url("../img/icon-date.svg");
 }
 
+/* SITE-HEADER CENTER */
+.site-header__center{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background-color: #fff;
+}
 
 
+.site-header__inner{
+  width: 180px;
+  position: relative;
+}
 
 .logo {
-
+  position: absolute;
+  top: calc(-50% - 28px);
+  left: 0;
 }
 
 .logo__img {
@@ -256,6 +271,8 @@ img {
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .sitenav__item {}
