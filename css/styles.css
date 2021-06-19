@@ -844,3 +844,71 @@ img {
 .sub-services-btn:not(:last-child){
   margin-right: 20px;
 }
+
+
+/* ONTIME */
+
+.ontime {
+  padding-top: 135px;
+  padding-bottom: 116px;
+}
+.ontime__box{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url("../img/ontime-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ontime__container {
+  padding-left: 232px;
+}
+
+.ontime__inner{
+  width: 544px;
+  position: relative;
+}
+
+.ontime__inner::after {
+  content: '';
+  width: 613px;
+  height: 481px;
+  position: absolute;
+  top: -224px;
+  right: -500px;
+  background-image: url("../img/dog-mul.png");
+  background-repeat: no-repeat;
+}
+
+.ontime__heading {
+  width: 494px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: 544px;
+}
+
+.form__group {
+  margin-right: 21px;
+}
+
+.input {
+  width: 335px;
+}
+
+.input__field {
+  border: none;
+  padding: 16px 22px;
+  border-radius: 5px;
+}
+
+.form__button {
+  border: none;
+}
