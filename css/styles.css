@@ -873,7 +873,7 @@ img {
   width: 613px;
   height: 481px;
   position: absolute;
-  top: -224px;
+  top: -219px;
   right: -500px;
   background-image: url("../img/dog-mul.png");
   background-repeat: no-repeat;
@@ -907,6 +907,19 @@ img {
   border: none;
   padding: 16px 22px;
   border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-primary-black);
+  border: 2px solid var(--main-white-color);
+}
+
+.input__field:not(:placeholder-shown):not(:focus):invalid{
+  border-color:#FF6347;
+}
+
+.input__field:not(:placeholder-shown):not(:focus):valid{
+  border-color: #90EE90;
+
 }
 
 .form__button {
