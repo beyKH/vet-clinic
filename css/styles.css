@@ -76,6 +76,56 @@ html {
 
 
  */
+
+/* REUSABLE */
+
+.heading {
+  margin-top: 0;
+  color: var(--color-primary-black);
+}
+
+.info {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-primary-grey);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  transition: opacity 0.3s ease;
+}
+
+.btn--black{
+  background-color: var(--color-primary-black);
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+.btn:active{
+  opacity: 0.6;
+}
+
+.btn--gold{
+  background-color: var(--color-primary-gold);
+}
+
+
+
+
+
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -89,6 +139,7 @@ body {
   color: var(--color-primary-grey);
   background-color: #f9f9f9;
   background-image: url("../img/bg.png");
+  overflow-x: hidden;
 }
 
 img {
@@ -244,6 +295,7 @@ img {
   padding-top: 17px;
   padding-bottom: 17px;
   background-color: #fff;
+  border: 1px solid #F3F3F3;
 }
 
 .center-container{
@@ -332,7 +384,7 @@ img {
   transition: opacity 0.3s ease;
 
 }
-.link:active{
+.link:active  {
   opacity: 0.6;
 }
 
@@ -384,9 +436,64 @@ img {
   background-size: cover;
 }
 
+/* HERO */
+.hero {
+  padding-top: 145px;
+  padding-bottom: 145px;
+  background-image: url("../img/hero-animals-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 510px) calc(85%);
+}
+
+.hero__container {
+  display: flex;
+  justify-content: flex-end;
+}
 
 
+.hero__inner {
+  width: 610px;
+  position: relative;
+}
 
+.hero__inner::after{
+  content: '';
+  position: absolute;
+  right: -200px;
+  bottom: -240px;
+  width: 350px;
+  height: 430px;
+  background-image: url("../img/herro-parrot-bg.png");
+}
+
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+
+}
+.hero__heading span{
+  color: var(--color-primary-blue);
+}
+
+.hero__info {
+  width: 495px;
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+
+.hero__link {
+  background-color: var(--color-primary-black);
+}
 
 
 
@@ -400,21 +507,6 @@ img {
 
 
 
-
-
-
-
-
-/* REUSABLE */
-
-.heading {
-  margin-top: 0;
-
-}
-
-.info {
-  margin-top: 0;
-}
 
 
 
