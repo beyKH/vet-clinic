@@ -629,7 +629,7 @@ img {
   margin-right: 35px;
   display: flex;
   /* justify-content: center; */
-  align-items: stretch;
+  align-items: flex-start;
   list-style: none;
   overflow-x: hidden;
 
@@ -802,13 +802,20 @@ img {
 .service{
   position: relative;
   z-index: 5;
+  height: 201px;
 }
 
 .service--active{
-  height: 223px;
+  height: 220px;
+  border-bottom-right-radius:0 ;
+  border-bottom-left-radius: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
 }
+
+
 .sub-services{
-  margin-top: 19px;
   margin-left: 35px;
   margin-right: 35px;
   padding: 42px 35px;
@@ -847,11 +854,39 @@ img {
 
 .sub-services__link{
   margin-top: 34px;
+  width: 447px;
+  display: flex;
+
 }
 .sub-services-btn:not(:last-child){
   margin-right: 20px;
 }
 
+.sub-services-btn{
+  display: flex;
+  align-items: center;
+  padding: 15px 35px;
+  white-space: nowrap;
+}
+
+
+.sub-services__icon::before{
+  content: '';
+  width: 21px;
+  height: 21px;
+  display: block;
+  margin-right: 6px;
+
+}
+
+.money::before{
+  background-image: url("../img/money.png");
+
+}
+
+.session::before{
+  background-image: url("../img/session.png");
+}
 
 /* ONTIME */
 
