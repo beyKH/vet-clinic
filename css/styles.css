@@ -1032,8 +1032,12 @@ img {
   background-color: #f3f3f3;
 }
 
-
 .footer__container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer__inner{
   display: flex;
 }
 
@@ -1151,4 +1155,12 @@ img {
   height: 16px;
   background-repeat: no-repeat;
   background-image: url("../img/icon-phone.svg");
+}
+
+.copyright{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5C5C5C;
 }
