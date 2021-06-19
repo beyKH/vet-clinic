@@ -14,7 +14,7 @@
 @font-face {
   font-family: 'FuturaPT';
   src: url('../font/FuturaPT-Bold.woff2') format('woff2'),
-    url('../font/FuturaPT-Bold.woff') format('woff');
+  url('../font/FuturaPT-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -23,7 +23,7 @@
 @font-face {
   font-family: 'FuturaPT';
   src: url('../font/FuturaPT-Book.woff2') format('woff2'),
-    url('../font/FuturaPT-Book.woff') format('woff');
+  url('../font/FuturaPT-Book.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 @font-face {
   font-family: 'FuturaPT';
   src: url('../font/FuturaPT-Light.woff2') format('woff2'),
-    url('../font/FuturaPT-Light.woff') format('woff');
+  url('../font/FuturaPT-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -41,7 +41,7 @@
 @font-face {
   font-family: 'FuturaPT';
   src: url('../font/FuturaPT-Medium.woff2') format('woff2'),
-    url('../font/FuturaPT-Medium.woff') format('woff');
+  url('../font/FuturaPT-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -60,22 +60,22 @@ html {
   box-sizing: inherit;
 }
 /* 1310px
-  tel link hover boladi
-  nav centerda turadi
-  baliqlar before
+tel link hover boladi
+nav centerda turadi
+baliqlar before
 
-  hero
-  2ta alohida rasm
-
-
-  ourservices
-  list alohida
-  pasgi alohida
+hero
+2ta alohida rasm
 
 
+ourservices
+list alohida
+pasgi alohida
 
 
- */
+
+
+*/
 
 /* REUSABLE */
 
@@ -1172,7 +1172,7 @@ img {
 
 .contact-form__tx{
   margin-bottom: 20px;
-    width: 375px;
+  width: 375px;
 }
 .contact-form__textarea{
   resize: vertical;
