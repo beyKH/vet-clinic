@@ -1,4 +1,49 @@
 :root {
+  --color-primary-blue: #78C0DE;
+  --color-primary-grey: #949494;
+  --color-primary-light-grey: #DBDBDB;
+  --color-primary-gold: #FFBD54;
+  --color-primary-black: #333;
+  --section-color : #F3F3F3;
+  --main-font:"FuturaPT", "Arial", sans-serif;
+
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('../font/FuturaPT-Bold.woff2') format('woff2'),
+    url('../font/FuturaPT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('../font/FuturaPT-Book.woff2') format('woff2'),
+    url('../font/FuturaPT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('../font/FuturaPT-Light.woff2') format('woff2'),
+    url('../font/FuturaPT-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('../font/FuturaPT-Medium.woff2') format('woff2'),
+    url('../font/FuturaPT-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* GENERAL */
@@ -13,15 +58,36 @@ html {
 *::after {
   box-sizing: inherit;
 }
+/* 1310px
+  tel link hover boladi
+  nav centerda turadi
+  baliqlar before
 
+  hero
+  2ta alohida rasm
+
+
+  ourservices
+  list alohida
+  pasgi alohida
+
+
+
+
+ */
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #fff;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-primary-grey);
+  background-color: #f9f9f9;
+  background-image: url("../img/bg.png");
 }
 
 img {
@@ -43,36 +109,134 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 1140px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
+  max-width: 1330px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* REUSABLE */
-
-.heading{
-  margin-top: 0;
-
-}
-
-.info{
-  margin-top: 0;
-}
 
 
 /* HEADER */
 
 /* SITE-HEADER */
 .site-header {
-  padding-top: 30px;
-  padding-bottom: 30px;
+
 }
 
-.site-header__container {
+
+/* SITE-HEADER-TOP */
+.site-header__top {
+  padding-top: 12px;
+  padding-bottom: 12px;
   display: flex;
+  justify-content: flex-end;
+  background-color: #f9f8f8;
 }
+
+
+.site-header__address {
+  margin-right: 106px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: var(--color-primary-black);
+}
+
+.icon-before::before {
+  content: '';
+  flex-shrink: 0;
+  margin-right: 9px;
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-address::before {
+  background-image: url("../img/icon-home.svg");
+
+}
+
+.site-header__phone-list {
+  margin: 0;
+  margin-right: 100px;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.site-header__phone:not(:last-child) {
+  margin-right: 9px;
+}
+
+
+.phone__link {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-primary-black);
+  text-decoration: none;
+  transition: color 0.3s ease, opacity 0.6s ease ;
+}
+
+.phone__link:hover{
+  color: var(--color-primary-gold);
+}
+
+.phone__link:active{
+  opacity: 0.6;
+}
+
+.icon-phone::before{
+  display: block;
+  background-image: url("../img/icon-phone.svg");
+}
+
+.icon-circle::before{
+  content: '';
+  margin-right: 9px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--color-primary-gold);
+}
+
+
+.site-header__date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  color: var(--color-primary-black);
+  display: flex;
+  align-items: center;
+
+}
+
+.site-header__date:not(:last-child){
+  margin-right: 17px;
+}
+
+.site-header__date span{
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.icon-date::before {
+  background-image: url("../img/icon-date.svg");
+}
+
+
+
 
 .logo {
 
@@ -100,9 +264,36 @@ img {
   text-decoration: none;
 }
 
+/* SITE-CONTENT */
+.site-content{
+  flex-grow: 1;
+}
 
 
 
+
+
+
+
+
+
+/* REUSABLE */
+
+.heading {
+  margin-top: 0;
+
+}
+
+.info {
+  margin-top: 0;
+}
+
+
+
+
+
+
+/* RETINA */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -113,3 +304,6 @@ only screen and (min-resolution: 2dppx) {
     background-image: url('../img/signup-bg@2x.png');
   }
 }
+
+
+
