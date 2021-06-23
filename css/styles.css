@@ -1244,12 +1244,25 @@ img {
 }
 
 .article-card__link{
+  margin-top: 30px;
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  display: inline-block;
   color: var(--color-primary-black);
   text-decoration: none;
+}
+
+.article-card__link::before{
+  content: '';
+  display: block;
+  margin-right: 10px;
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/pet.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 
@@ -1461,6 +1474,7 @@ img {
 
 .contact__link{
   display: inline-block;
+  border: none;
   /* margin-top: 30px; */
   padding: 15px 50px;
   border-radius: 0;
