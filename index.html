@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vet clinic</title>
-  <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
-  <!-- <link rel="stylesheet" href="css/styles.css"> -->
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
 </head>
 <body>
   <!-- SITE-HEADER -->
@@ -28,8 +28,12 @@
               <a class="phone__link icon-circle" href="tel:0982664389">(098) 266 - 43 - 89</a>
             </li>
           </ul>
-          <span class="site-header__date icon-before icon-date"><span>Пн - Пт </span> 8:00 - 18:00</span>
-          <span class="site-header__date"><span>Сб - Вс </span> 8:00 - 14:00</span>
+          <span class="site-header__date icon-before icon-date"><span>Пн - Пт </span>
+            <time datetime="08:00">8:00</time> - <time datetime="18:00">18:00</time>
+          </span>
+          <span class="site-header__date"><span>Сб - Вс </span>
+          <time datetime="08:00">8:00</time> - <time datetime="14:00">14:00</time>
+        </span>
 
       </div></div>
       <!-- SITE-HEADER MIDDLE -->
@@ -44,13 +48,13 @@
           <nav class="sitenav">
             <ul class="sitenav__list">
               <li class="sitenav__item sitenav__item--active">
-                <a class="sitenav__link  link" href="#">Главная</a>
+                <a class="sitenav__link  link" href="index.html">Главная</a>
               </li>
               <li class="sitenav__item">
                 <a class="sitenav__link link " href="#">О Клинике</a>
               </li>
               <li class="sitenav__item">
-                <a class="sitenav__link link" href="#">Наши Услуги</a>
+                <a class="sitenav__link link" href="services.html">Наши Услуги</a>
               </li>
               <li class="sitenav__item">
                 <a class="sitenav__link link" href="#">Полезные Статьи</a>
@@ -105,98 +109,98 @@
       </div>
     </section>
 
-    <!--  SERVICES -->
-    <section class="services">
-      <div class="container services__container">
-        <h2 class="heading services__heading">Наши услуги</h2>
-        <div class="services__scroll">
-          <button class="services__button left-arrow"></button>
-          <ul class="servives__list">
-            <li class="services__item service service--active ">
-              <a class="service__link simple-cheking" href="#">
-                <p class="service__info">Первичный осмотр</p>
-              </a>
-            </li>
-            <li class="services__item service ">
-              <a class="service__link simple-cheking-female" href="#">
-                <p class="service__info">Первичный осмотр</p>
-              </a>
-            </li>
-            <li class="services__item ">
-              <a class="service__link service super-cheking" href="#">
-                <p class="service__info">Хирургическое вмешательство</p>
-              </a>
-            </li>
-            <li class="services__item service">
-              <a class="service__link  skin-cheking" href="#">
-                <p class="service__info">Дерматология</p>
-              </a>
-            </li>
-            <li class="services__item service">
-              <a class="service__link  diognize-cheking" href="#">
-                <p class="service__info">Лабораторная диагностика</p>
-              </a>
-            </li>
-            <li class="services__item service ">
-              <a class="service__link  yellow-cheking" href="#">
-                <p class="service__info">Офтальмология</p>
-              </a>
-            </li>
-            <li class="services__item service">
-              <a class="service__link  uzi-cheking" href="#">
-                <p class="service__info">УЗИ диагностика</p>
-              </a>
-            </li>
-            <li class="services__item service">
-              <a class="service__link  injection-cheking" href="#">
-                <p class="service__info">Чипирование</p>
-              </a>
-            </li>
-            <li class="services__item service">
-              <a class="service__link  international-cheking" href="#">
-                <p class="service__info">Международные паспорта</p>
-              </a>
-            </li>
-            <li class="services__item service">
-              <a class="service__link  vacination-cheking" href="#">
-                <p class="service__info">Вакцинация</p>
-              </a>
-            </li>
-            <li class="services__item service">
-              <a class="service__link  stamotology-cheking" href="#">
-                <p class="service__info">Стоматология</p>
-              </a>
-            </li>
-            <li class="services__item ">
-              <a class="service__link service home-cheking" href="#">
-                <p class="service__info">Вызов на дом</p>
-              </a>
-            </li>
-          </ul>
-          <button class="services__button right-arrow"></button>
-        </div>
+    <!-- INDEX SERVICES  -->
+    <section class="index-services">
+      <div class="container">
+        <div class="index-services__container">
 
-        <div class="sub-services">
-          <img class="sub-services__img" src="img/cat-bg.png" alt="cat image" width="524" height="329">
-          <div class="sub-services__inner">
-            <h2 class="sub-services__heading">Первичный осмотр</h2>
-            <p class="sub-services__info mg">По условиям акции в нашей клинике предоставляетса безплатная услуга
-              “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
-            <p class="sub-services__info  ">По условиям акции в нашей клинике предоставляетса безплатная услуга
-              “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
-            <div class="sub-services__link">
-              <a class="btn btn--gold sub-services-btn sub-services__icon money" href="#">Узнать цену</a>
-              <a class="btn btn--black sub-services-btn sub-services__icon session" href="#">Записаться на приём</a>
+          <h2 class="heading index-services__heading">Наши услуги</h2>
+          <div class="index-services__tabs-wrapper">
+            <button class="index-services__tabs-button index-services__tabs--prev" type="button"></button>
+            <button class="index-services__tabs-button index-services__tabs--next" type="button"></button>
+            <ul class="services__tabs">
+              <li class="services-tabs__item services-tabs__item ">
+              <a class="services-tabs__link initial-inspection-male" href="#">
+                  <h3 class="services-tabs__title">Первичный осмотр</h3>
+                </a>
+              </li>
+              <li class="services-tabs__item services-tabs__item--active">
+                <a class="services-tabs__link initial-inspection-female" href="#">
+                  <h3 class="services-tabs__title">Первичный осмотр</h3>
+                </a>
+              </li>
+              <li class="services-tabs__item">
+                <a class="services-tabs__link surgical-intervention" href="#">
+                  <h3 class="services-tabs__title">Хирургическое вмешательство</h3>
+                </a>
+              </li>
+              <li class="services-tabs__item ">
+                <a class="services-tabs__link dermotology" href="#">
+                  <h3 class="services-tabs__title">Дерматология</h3>
+                </a>
+              </li>
+              <li class="services-tabs__item services-tabs__item--male-doctor">
+                <a class="services-tabs__link laboratory-diagnostics" href="#">
+                  <h3 class="services-tabs__title">Лабораторная диагностика</h3>
+                </a>
+              </li>
+              <li class="services-tabs__item ">
+                <a class="services-tabs__link ophthalmology" href="#">
+                  <h3 class="services-tabs__title">Офтальмология</h3>
+                </a>
+              </li>
+              <li class="services-tabs__item">
+                <a class="services-tabs__link uzi" href="#">
+                  <h3 class="services-tabs__title">УЗИ диагностика</h3>
+                </a>
+              </li>
+              <li class="services-tabs__item ">
+                <a class="services-tabs__link chipping" href="#">
+                  <h3 class="services-tabs__title">Чипированиея</h3>
+                </a>
+              </li>
+              <li class="services-tabs__item">
+                <a class="services-tabs__link" href="#">
+                  <h3 class="services-tabs__title">Международ-ные паспорта</h3>
+                </a>
+              </li>
+              <li class="services-tabs__item ">
+                <a class="services-tabs__link" href="#">
+                  <h3 class="services-tabs__title">Вакцинация</h3>
+                </a>
+              </li>
+              <li class="services-tabs__item">
+                <a class="services-tabs__link" href="#">
+                  <h3 class="services-tabs__title">Стоматология</h3>
+                </a>
+              </li>
+              <li class="services-tabs__item ">
+                <a class="services-tabs__link" href="#">
+                  <h3 class="services-tabs__title">Вызов на дом</h3>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+      <section class="index-services__details">
+            <img src="img/cat-bg.png" alt="cat image">
+            <div class="index-services__details-inner">
+              <h3 class="index-services__details-heading">Первичный осмотр</h3>
+              <p class="index-services__details-info">По условиям акции в нашей клинике предоставляетса безплатная услуга
+                “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+              <p class="index-services__details-info">По условиям акции в нашей клинике предоставляетса безплатная услуга
+                “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+              <a class="btn mr btn--gold" href="#">Узнать цену</a>
+              <a class="btn btn--black" href="#">Записаться на приём</a>
             </div>
-            </div>
-        </div>
+      </section>
 
       </div>
+    </div>
     </section>
 
     <!-- ONTIME SECTION -->
     <section class="ontime">
-      <div class="ontime__box">
         <div class="ontime__container container">
           <div class="ontime__inner">
             <h2 class="ontime__heading heading">Будь в курсе событий</h2>
@@ -211,7 +215,6 @@
               </form>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- RULES -->
@@ -219,7 +222,7 @@
       <div class="container rules__container">
         <h2 class="heading rules__heading">Полезные статьи</h2>
         <ul class="rules__list">
-          <li class="rules__item rule   ">
+          <li class="rules__item rule  ">
             <img class="rule__img" src="img/rules-cat.png" alt="image of cat" width="305" height="180">
             <div class="rule__box">
               <p class="rule__time">28.08.2020</p>
@@ -258,7 +261,71 @@
         </ul>
       </div>
     </section>
-
+    <!-- INDEX ARTICLES -->
+    <section class="index-articles">
+      <div class="index-articles__container container">
+        <h2 class="index-articles__heading">Полезные статьи</h2>
+        <ul class="index-articles__list">
+          <li class="index-articles__item article-card article-card__open">
+            <img class="article-card__img" src="img/rules-cat.png" alt="article image" width="305" height="180">
+            <div class="article-card__body">
+              <div class="article-card__tags-date">
+                <ul class="tags">
+                  <li class="tags__item"><a class="tags__link" href="#">#собака</a></li>
+                  <li class="tags__item"><a class="tags__link" href="#">#дом</a></li>
+                  <li class="tags__item"><a class="tags__link" href="#">#уход</a></li>
+                </ul>
+                <time  class="article-card__date" datetime="2020-08-29">29.08.2020</time>
+              </div>
+              <h3 class="article-card__title">Перед тем как завести собаку</h3>
+              <p class="article-card__info">Появление в доме котенка приятное и радосное событие. Но не всегда этот
+                пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему
+                теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка.
+                Появление в доме котенка приятное и радосное событие.</p>
+              <a class="article-card__link" href="">Читать больше</a>
+            </div>
+          </li>
+          <li class="index-articles__item article-card ">
+            <img class="article-card__img" src="img/rules-cat.png" alt="article image" width="305" height="180">
+            <div class="article-card__body">
+              <div class="article-card__tags-date">
+                <ul class="tags">
+                  <li class="tags__item"><a class="tags__link" href="#">#собака</a></li>
+                  <li class="tags__item"><a class="tags__link" href="#">#дом</a></li>
+                  <li class="tags__item"><a class="tags__link" href="#">#уход</a></li>
+                </ul>
+                <time  class="article-card__date" datetime="2020-08-29">29.08.2020</time>
+              </div>
+              <h3 class="article-card__title">Перед тем как завести собаку</h3>
+              <p class="article-card__info">Появление в доме котенка приятное и радосное событие. Но не всегда этот
+                пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему
+                теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка.
+                Появление в доме котенка приятное и радосное событие.</p>
+              <a class="article-card__link" href="">Читать больше</a>
+            </div>
+          </li>
+          <li class="index-articles__item article-card">
+            <img class="article-card__img" src="img/rules-cat.png" alt="article image" width="305" height="180">
+            <div class="article-card__body">
+              <div class="article-card__tags-date">
+                <ul class="tags">
+                  <li class="tags__item"><a class="tags__link" href="#">#собака</a></li>
+                  <li class="tags__item"><a class="tags__link" href="#">#дом</a></li>
+                  <li class="tags__item"><a class="tags__link" href="#">#уход</a></li>
+                </ul>
+                <time  class="article-card__date" datetime="2020-08-29">29.08.2020</time>
+              </div>
+              <h3 class="article-card__title">Перед тем как завести собаку</h3>
+              <p class="article-card__info">Появление в доме котенка приятное и радосное событие. Но не всегда этот
+                пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему
+                теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка.
+                Появление в доме котенка приятное и радосное событие.</p>
+              <a class="article-card__link" href="">Читать больше</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!-- CONTACT -->
     <section class="contact">
@@ -282,9 +349,9 @@
           <div class=" contact-form__tx">
             <textarea class="contact-form__input contact-form__textarea" name="text-field" spellcheck="false" rows="10"
               placeholder="Опишите Ваш вопрос."
-              aria-label="Опишите Ваш вопрос." minlength="2" required></textarea>
+              aria-label="Опишите Ваш вопрос." minlength="3" required></textarea>
           </div>
-          <a class="btn btn--gold contact__link" href="#">Задать нам вопрос</a>
+          <button class="btn btn--gold contact__link" type="submit">Задать нам вопрос</button>
         </form>
       </div>
     </section>
@@ -328,8 +395,10 @@
           </ul>
         </div>
         <div class="footer__date-box">
-          <span class="footer__date icon-before icon-date"><span>Пн - Пт </span> 8:00 - 18:00</span>
-          <span class="footer__date"><span>Сб - Вс </span> 8:00 - 14:00</span>
+          <span class="footer__date icon-before icon-date"><span>Пн - Пт </span> <time datetime="08:00">8:00</time> -
+            <time datetime="18:00">18:00</time></span>
+          <span class="footer__date"><span>Сб - Вс </span> <time datetime="08:00">8:00</time> - <time
+              datetime="14:00">14:00</time></span>
         </div>
         <address class="footer__adress">г. Мариуполь, <br>  проспект Победы, 48а</address>
         <div class="footer__phone-box">
