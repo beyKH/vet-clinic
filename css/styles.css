@@ -2112,6 +2112,11 @@ img {
   background-color: #f3f3f3;
 }
 
+.qa:nth-child(3n) .qa-question__toggler{
+  /* pointer-events: none; */
+  cursor: not-allowed;
+}
+
 .qa-top__box {
   display: flex;
   align-items: center;
