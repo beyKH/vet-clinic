@@ -158,9 +158,6 @@ img {
 /* HEADER */
 
 /* SITE-HEADER */
-.site-header {
-
-}
 
 
 /* SITE-HEADER-TOP */
@@ -505,8 +502,7 @@ img {
 
 }
 
-.saying__container {
-}
+
 
 .saying__inner {
   width: 1134px;
@@ -749,11 +745,6 @@ img {
   margin-right: 21px;
 }
 
-.btn {}
-
-.btn--gold {}
-
-.btn--black {}
 
 /* SERVICES-SECTION */
 .services {
@@ -1119,7 +1110,6 @@ img {
   padding-bottom: 250px;
 }
 
-.index-articles__container {}
 
 .index-articles__heading {
   margin-top: 0;
@@ -1155,13 +1145,6 @@ img {
 .article-card__open{
   width: 640px;
   display: flex;
-}
-
-
-
-
-.article-card {
-
 }
 
 
@@ -1208,7 +1191,6 @@ img {
   text-decoration: none;
 }
 
-.tags__link{}
 
 .article-card__date {
   margin-left: auto;
@@ -1272,8 +1254,6 @@ img {
   padding-bottom: 262px;
 
 }
-
-.rules__container {}
 
 
 .rules__heading {
@@ -1393,9 +1373,7 @@ img {
 /* CONTACT */
 .contact{
   padding-bottom: 247px;
-  background-image: url();
   display: flex;
-  align-items: stretch;
   width: 1440px;
   margin-left: auto;
   margin-right:auto;
@@ -1403,7 +1381,6 @@ img {
 
 .contact__map{
   width: 462px;
-  height: 647px;
 }
 
 .contact__map iframe{
@@ -1411,15 +1388,14 @@ img {
 }
 
 .contact__box {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 70px;
   padding-left: 145px;
-  background-image: url("../img/form-bg.png");
-  /* background-size: contain; */
+  background-image: url("../img/map-bg.png");
+  background-color: #333;
   background-position: right center;
   background-repeat: no-repeat;
   width:938px;
-  /* height: 649px; */
 }
 
 
@@ -1475,7 +1451,6 @@ img {
 .contact__link{
   display: inline-block;
   border: none;
-  /* margin-top: 30px; */
   padding: 15px 50px;
   border-radius: 0;
 
@@ -1782,9 +1757,6 @@ img {
   background-size: contain;
 }
 
-.service-section__body {
-
-}
 
 .service-section__body-heading {
   margin-top: 0px;
@@ -1803,14 +1775,6 @@ img {
   font-size: 16px;
   line-height: 20px;
   color: var(--color-primary-grey);
-}
-
-.btn {}
-
-.btn--black {}
-
-.service-section__body-link {
-  /* transition: background-color 0.3s ease; */
 }
 
 
@@ -1856,9 +1820,6 @@ img {
   background-image: url("../img/popup.png");
 }
 
-.modal-faq__cancel-box {
-
-}
 
 .modal-faq__cancel-button{
   width: 18px;
@@ -1977,9 +1938,6 @@ img {
 
 }
 
-.btn {}
-
-.btn--black {}
 
 .faq-modal__btn{
   border-radius: 0;
@@ -2002,15 +1960,11 @@ img {
 
 }
 
-.container {}
 
 .faq-container {
   padding-left: 120px;
 }
 
-.faq-container{
-
-}
 
 .faq__inner {
   position: relative;
